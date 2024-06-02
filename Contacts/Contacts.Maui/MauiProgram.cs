@@ -4,7 +4,7 @@ namespace Contacts.Maui
 {
     public static class MauiProgram
     {
-        public static MauiApp CreateMauiApp()
+        public static MauiApp CreateMauiApp()//everything starts from hee 
         {
             var builder = MauiApp.CreateBuilder();
             builder

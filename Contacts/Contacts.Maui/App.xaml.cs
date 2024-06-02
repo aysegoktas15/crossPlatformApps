@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new AppShell(); //specific cal of main page "appshell".it is created by default.
         }
     }
 }
