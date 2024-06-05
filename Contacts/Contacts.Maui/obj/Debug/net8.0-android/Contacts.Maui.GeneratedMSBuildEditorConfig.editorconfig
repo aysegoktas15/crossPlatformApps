@@ -45,3 +45,21 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Contacts.Maui.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/0_AYSE_GOKTAS_/01-DESKTOPFILES/02-WORKS/01-SOFTWARE/02-PROJECTS/06-CrossPlatformApps(.NET MAUI)/crossPlatformApps/Contacts/Contacts.Maui/Views/AddContactPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Contacts.Maui.Views.AddContactPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddContactPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddContactPage.xaml
+
+[D:/0_AYSE_GOKTAS_/01-DESKTOPFILES/02-WORKS/01-SOFTWARE/02-PROJECTS/06-CrossPlatformApps(.NET MAUI)/crossPlatformApps/Contacts/Contacts.Maui/Views/ContactsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Contacts.Maui.Views.ContactsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ContactsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ContactsPage.xaml
+
+[D:/0_AYSE_GOKTAS_/01-DESKTOPFILES/02-WORKS/01-SOFTWARE/02-PROJECTS/06-CrossPlatformApps(.NET MAUI)/crossPlatformApps/Contacts/Contacts.Maui/Views/EditContactPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Contacts.Maui.Views.EditContactPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditContactPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditContactPage.xaml

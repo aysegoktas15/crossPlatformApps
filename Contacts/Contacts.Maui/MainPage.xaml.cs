@@ -2,6 +2,9 @@
 {
     public partial class MainPage : ContentPage
     {
+        //Code behind of projects
+
+
         int count = 0;
 
         public MainPage()
