@@ -7,9 +7,10 @@
     <ScrollView> <!-- These are coming from namespaces -->
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            VerticalOptions="Center">
             <Image
-                Source="/Resources/Images/dotnet_bot.png"
+                Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
