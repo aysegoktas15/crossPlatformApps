@@ -1,8 +1,0 @@
-//Contacts (App)
-	//Step 1
-	//Edit contact
-	//Back to Contacts
-
-	//Step 2
-	//Add contact
-	//Back to Contacts
