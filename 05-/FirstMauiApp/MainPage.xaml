@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstMauiApp.MainPage" 
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             xmlns:viewmodel="clr-namespace:FirstMauiApp.ViewModel"
+             x:DataType="viewmodel:MainViewModel">
+
+
+
+    <Grid 
+        RowDefinitions="120, auto, auto, auto, *" 
+        RowSpacing="4"
+        ColumnDefinitions=".80*, .20*, .20*, .20*" 
+        Padding="12"
+        ColumnSpacing="5">
+
+
+        <Image 
+            x:Name="myImage"
+            Grid.ColumnSpan="5" 
+            BackgroundColor="Beige"></Image>
+
+        <Entry 
+            Placeholder="Enter a color" 
+            PlaceholderColor="DimGray" 
+            Grid.Row="1"
+            Text="{Binding Color}"
+            x:Name="colorNameEntry"></Entry>
+
+        <Button 
+            Text="ADD" 
+            Grid.Row="1" 
+            Grid.Column="1"
+            Command="{Binding AddColorCommand}"></Button>
+        <Button 
+            Text="DELETE" 
+            Grid.Row="1" 
+            Grid.Column="2"
+            Command="{Binding DeleteColorCommand}"
+            CommandParameter="{Binding Source={x:Reference colorNameEntry},Path=Text}"></Button>
+        <Button 
+            Text="PLAY" 
+            Grid.Row="1" 
+            Grid.Column="3"
+            Clicked="OnPlayClicked"></Button>
+        <Button 
+            Text="IMAGE" 
+            Grid.Row="1" 
+            Grid.Column="4"
+            Clicked="OnChangeImageClicked"></Button>
+
+        <CollectionView 
+            Grid.Row="2" 
+            Grid.ColumnSpan="1"
+            ItemsSource="{Binding ColorItems}">
+
+            <CollectionView.ItemTemplate>
+                <!-- Creating data template -->
+                <DataTemplate x:DataType="{x:Type x:String}">
+                    <Grid 
+                        Padding="4, 4">
+                        <Frame>
+                            <Label 
+                                Text="{Binding .}" 
+                                FontSize="Medium"></Label>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <mct:DrawingView
+            x:Name="myDrawing"
+            IsMultiLineModeEnabled="True"
+            BackgroundColor="DimGray"
+            Grid.Row="5"
+            WidthRequest="800"
+            HeightRequest="200"
+            HorizontalOptions="Center"></mct:DrawingView>
+    </Grid>
+
+</ContentPage>
